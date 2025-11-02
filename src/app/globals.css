@@ -1,3 +1,16 @@
+/* Set up some CSS variables to theme the application. */
+:root {
+  /* Brand/background color for navbar/footer (requested: #ffc6c6) */
+  --nat-navbar-bg: #ffc6c6;
+  --nat-navbar-bg-rgb: 255, 198, 198;
+  /* Synonyms in case of alternate naming */
+  --nat-navbar-bg-color: var(--nat-navbar-bg);
+  --nat-navbar-bg-rgb-color: var(--nat-navbar-bg-rgb);
+  /* Text colors: use dark text for contrast on light background */
+  --nat-navbar-text-color: #1f1f1f;
+  --nat-navbar-highlight-text: #6b2d2b; /* complementary darker accent */
+}
+
 html,
 body {
   --bs-light-rgb: 236, 236, 236;
@@ -11,4 +24,36 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+/* Background image for entire app body */
+body {
+  /* Change bootstrap variable values to theme dark areas */
+  --bs-dark: var(--nat-navbar-bg);
+  --bs-dark-rgb: var(--nat-navbar-bg-rgb);
+  /* Use explicit properties to avoid compositor blur from fixed backgrounds */
+  background-image: url('/946615-pink-aesthetic-hd-wallpaper-and-background.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Make footer text and links light for contrast on dark background */
+footer,
+footer a {
+  color: var(--nat-navbar-text-color);
+}
+
+/* Override Bootstrap navbar CSS variables for colors and hovers */
+body .navbar {
+  --bs-navbar-active-color: var(--nat-navbar-highlight-text);
+  --bs-navbar-brand-color: var(--nat-navbar-text-color);
+  --bs-navbar-brand-hover-color: var(--nat-navbar-highlight-text);
+  --bs-navbar-color: var(--nat-navbar-text-color);
+  --bs-navbar-hover-color: var(--nat-navbar-highlight-text);
+}
+
+/* Ensure dropdown items are readable against their background */
+.bg-dark a.dropdown-item {
+  color: var(--nat-navbar-bg);
 }
