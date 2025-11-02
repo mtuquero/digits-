@@ -1,3 +1,17 @@
+:root {
+  /* Navbar (global dark) color */
+  --nat-navbar-bg: #ba9ed8;
+  --nat-navbar-bg-rgb: 186, 158, 216; /* corrected RGB for #ba9ed8 */
+  --nat-navbar-bg-color: var(--nat-navbar-bg);
+  --nat-navbar-bg-rgb-color: var(--nat-navbar-bg-rgb);
+
+  /* Footer-specific color */
+  --nat-footer-bg: #ba9ed8;
+  --nat-footer-bg-rgb: 186, 158, 216;
+  --nat-navbar-text-color: #000000; 
+  --nat-navbar-highlight-text: rgb(116, 7, 249); 
+}
+
 html,
 body {
   --bs-light-rgb: 236, 236, 236;
@@ -11,4 +25,42 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+/* Background image for entire app body */
+body {
+  /* Change bootstrap variable values to theme dark areas */
+  --bs-dark: var(--nat-navbar-bg);
+  --bs-dark-rgb: var(--nat-navbar-bg-rgb);
+  /* Use explicit properties to avoid compositor blur from fixed backgrounds */
+  background-image: url('/64c15032a90fafad1f5cb935__5-p-2000.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Scope Bootstrap dark variables to footer only so it uses the footer color */
+footer.bg-dark {
+  --bs-dark: var(--nat-footer-bg);
+  --bs-dark-rgb: var(--nat-footer-bg-rgb);
+}
+
+/* Make footer text and links light for contrast on dark background */
+footer,
+footer a {
+  color: var(--nat-navbar-text-color);
+}
+
+/* Override Bootstrap navbar CSS variables for colors and hovers */
+body .navbar {
+  --bs-navbar-active-color: var(--nat-navbar-highlight-text);
+  --bs-navbar-brand-color: var(--nat-navbar-text-color);
+  --bs-navbar-brand-hover-color: var(--nat-navbar-highlight-text);
+  --bs-navbar-color: var(--nat-navbar-text-color);
+  --bs-navbar-hover-color: var(--nat-navbar-highlight-text);
+}
+
+/* Ensure dropdown items are readable against their background */
+.bg-dark a.dropdown-item {
+  color: var(--nat-navbar-bg);
 }
