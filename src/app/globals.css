@@ -3,10 +3,8 @@
   /* Brand/background color for navbar/footer (requested: #ffc6c6) */
   --nat-navbar-bg: #ffc6c6;
   --nat-navbar-bg-rgb: 255, 198, 198;
-  /* Synonyms in case of alternate naming */
   --nat-navbar-bg-color: var(--nat-navbar-bg);
   --nat-navbar-bg-rgb-color: var(--nat-navbar-bg-rgb);
-  /* Text colors: use dark text for contrast on light background */
   --nat-navbar-text-color: #1f1f1f;
   --nat-navbar-highlight-text: #6b2d2b; /* complementary darker accent */
 }
@@ -56,4 +54,32 @@ body .navbar {
 /* Ensure dropdown items are readable against their background */
 .bg-dark a.dropdown-item {
   color: var(--nat-navbar-bg);
+}
+
+/* Force the navbar and footer to use the custom pink background and dark text */
+.navbar.bg-dark,
+footer.bg-dark,
+.navbar-dark,
+nav.navbar.bg-dark,
+footer.mt-auto.py-3.bg-dark {
+  background-color: #ffc6c6 !important;
+  background: #ffc6c6 !important;
+  color: #1f1f1f !important;
+}
+
+/* Force all text elements in navbar and footer to be dark */
+.navbar.bg-dark *,
+footer.bg-dark *,
+.navbar.bg-dark a,
+footer.bg-dark a,
+.navbar.bg-dark .navbar-brand,
+.navbar.bg-dark .nav-link,
+.navbar.bg-dark .dropdown-toggle {
+  color: #1f1f1f !important;
+}
+
+/* Override hover states */
+.navbar.bg-dark .nav-link:hover,
+.navbar.bg-dark .navbar-brand:hover {
+  color: #6b2d2b !important;
 }
