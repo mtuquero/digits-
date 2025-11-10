@@ -38,7 +38,7 @@ const EditContactForm = ({ contact }: { contact: Contact }) => {
             <Card.Body>
               <Form onSubmit={handleSubmit(onSubmit)}>
                 <input type="hidden" {...register('id')} value={contact.id} />
-                
+
                 <Form.Group>
                   <Form.Label>First Name</Form.Label>
                   <input
@@ -49,7 +49,7 @@ const EditContactForm = ({ contact }: { contact: Contact }) => {
                   />
                   <div className="invalid-feedback">{errors.firstName?.message}</div>
                 </Form.Group>
-                
+
                 <Form.Group>
                   <Form.Label>Last Name</Form.Label>
                   <input
@@ -60,7 +60,7 @@ const EditContactForm = ({ contact }: { contact: Contact }) => {
                   />
                   <div className="invalid-feedback">{errors.lastName?.message}</div>
                 </Form.Group>
-                
+
                 <Form.Group>
                   <Form.Label>Address</Form.Label>
                   <input
@@ -71,7 +71,7 @@ const EditContactForm = ({ contact }: { contact: Contact }) => {
                   />
                   <div className="invalid-feedback">{errors.address?.message}</div>
                 </Form.Group>
-                
+
                 <Form.Group>
                   <Form.Label>Image</Form.Label>
                   <input
@@ -82,7 +82,7 @@ const EditContactForm = ({ contact }: { contact: Contact }) => {
                   />
                   <div className="invalid-feedback">{errors.image?.message}</div>
                 </Form.Group>
-                
+
                 <Form.Group>
                   <Form.Label>Description</Form.Label>
                   <textarea
@@ -93,9 +93,9 @@ const EditContactForm = ({ contact }: { contact: Contact }) => {
                   />
                   <div className="invalid-feedback">{errors.description?.message}</div>
                 </Form.Group>
-                
+
                 <input type="hidden" {...register('owner')} value={contact.owner} />
-                
+
                 <Form.Group className="form-group">
                   <Row className="pt-3">
                     <Col>
