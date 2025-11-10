@@ -31,15 +31,3 @@ model Contact {
   description String
   owner       String
 }
-
-enum Role {
-  USER
-  ADMIN
-}
-
-enum Condition {
-  excellent
-  good
-  fair
-  poor
-}

@@ -1,6 +1,8 @@
 import { getServerSession } from 'next-auth';
 import { Col, Container, Row } from 'react-bootstrap';
 import { prisma } from '@/lib/prisma';
+import { Contact } from '@prisma/client';
+// import StuffItem from '@/components/StuffItem';
 import { loggedInProtectedPage } from '@/lib/page-protection';
 import authOptions from '@/lib/authOptions';
 import ContactCard from '@/components/ContactCard';
@@ -15,10 +17,8 @@ const ListPage = async () => {
       // eslint-disable-next-line @typescript-eslint/comma-dangle
     } | null,
   );
-
-  // Fetch contacts from the database for the current user
   const owner = (session && session.user && session.user.email) || '';
-  const contacts = await prisma.contact.findMany({
+  const contacts: Contact[] = await prisma.contact.findMany({
     where: {
       owner,
     },
