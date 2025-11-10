@@ -95,6 +95,23 @@ export async function editContact(contact: Contact) {
 }
 
 /**
+ * Adds a new note to the database.
+ * @param note, an object with the following properties: note, contactId, owner.
+ */
+export async function addNote(note: { note: string; contactId: number; owner: string }) {
+  // console.log(`addNote data: ${JSON.stringify(note, null, 2)}`);
+  await prisma.note.create({
+    data: {
+      note: note.note,
+      contactId: note.contactId,
+      owner: note.owner,
+    },
+  });
+  // After adding, redirect to the list page
+  redirect('/list');
+}
+
+/**
  * Deletes an existing stuff from the database.
  * @param id, the id of the stuff to delete.
  */

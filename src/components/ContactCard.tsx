@@ -1,25 +1,33 @@
 'use client';
 
-import { Card } from 'react-bootstrap';
-import { Contact } from '@prisma/client';
+import { Card, ListGroup } from 'react-bootstrap';
+import { Contact, Note } from '@prisma/client';
+import Link from 'next/link';
+import NoteItem from './Noteitem';
+import AddNoteForm from './AddNoteForm';
 
 /* Renders a single contact card. See list/page.tsx. */
-const ContactCard = ({ id, firstName, lastName, address, image, description }: Contact) => (
+const ContactCard = ({ contact, notes }: { contact: Contact; notes: Note[] }) => (
   <Card className="h-100">
     <Card.Header>
-      <Card.Img variant="top" src={image} width={75} style={{ width: '75px', height: '75px' }} />
+      <Card.Img variant="top" src={contact.image} width={75} style={{ width: '75px', height: '75px' }} />
     </Card.Header>
     <Card.Body>
       <Card.Title>
-        {firstName}
+        {contact.firstName}
         {' '}
-        {lastName}
+        {contact.lastName}
       </Card.Title>
-      <Card.Subtitle className="mb-2 text-muted">{address}</Card.Subtitle>
-      <Card.Text>{description}</Card.Text>
+      <Card.Subtitle className="mb-2 text-muted">{contact.address}</Card.Subtitle>
+      <Card.Text>{contact.description}</Card.Text>
     </Card.Body>
+    <ListGroup variant="flush">
+      {notes.map((note) => <NoteItem key={note.id} note={note} />)}
+    </ListGroup>
+    <AddNoteForm contactId={contact.id} />
     <Card.Footer>
-      <Link href={`/edit/${id}`}>Edit</Link>
+      {/* eslint-disable-next-line react/jsx-no-undef */}
+      <Link href={`/edit/${contact.id}`}>Edit</Link>
     </Card.Footer>
   </Card>
 );
