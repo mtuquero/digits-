@@ -29,6 +29,42 @@ const AdminPage = async () => {
             </Row>
           </Col>
         </Row>
+        <Row>
+          <Col>
+            <h1>List Contacts Admin</h1>
+            <Table striped bordered hover>
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Address</th>
+                  <th>Image</th>
+                  <th>Description</th>
+                  <th>Owner</th>
+                </tr>
+              </thead>
+              <tbody>
+                {contacts.map((contact) => (
+                  <tr key={contact.id}>
+                    <td>{contact.firstName}</td>
+                    <td>{contact.lastName}</td>
+                    <td>{contact.address}</td>
+                    <td>
+                      <Image
+                        src={contact.image}
+                        alt={`${contact.firstName} ${contact.lastName}`}
+                        width={50}
+                        height={50}
+                      />
+                    </td>
+                    <td>{contact.description}</td>
+                    <td>{contact.owner}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </Col>
+        </Row>
       </Container>
     </main>
   );
