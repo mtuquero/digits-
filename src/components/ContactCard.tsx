@@ -1,6 +1,7 @@
 'use client';
 
 import { Card } from 'react-bootstrap';
+import Link from 'next/link';
 import { Contact } from '@prisma/client';
 
 /* Renders a single contact card. See list/page.tsx. */
