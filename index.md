@@ -149,7 +149,7 @@
   </div>
   <p>
     The Edit Contact page allows users to update an existing contact’s information. 
-    After saving changes, the updated details are instantly reflected on the Home page.
+    After saving changes, the updated details are instantly reflected on the listing contact page.
   </p>
 
   <!-- Admin Page -->
