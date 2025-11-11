@@ -101,19 +101,13 @@
     <img src="doc/Homepage user.jpeg" width="700" alt="Home Page">
   </div>
   <p>
-    After logging in, users are directed to their personal Home page, which displays a list of all their saved contacts.
-    Each contact card shows the person’s name, phone number, email address, and home address.
+    After logging in, it will take you to your home page and the navbar will contain links to list contact and add new contacts.
   </p>
-  <ul>
-    <li>View all saved contacts</li>
-    <li>Edit or delete existing contacts</li>
-    <li>Navigate to add new contacts</li>
-  </ul>
 
   <!-- Add Contact Page -->
   <h3>Add Contact Page</h3>
   <div style="text-align: center;">
-    <img src="doc/AddContact.jpeg" width="700" alt="Add Contact Page">
+    <img src="doc/NotesPage.jpeg" width="700" alt="Add Contact Page">
   </div>
   <p>
     The Add Contact page allows users to create a new contact by entering:
