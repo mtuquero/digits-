@@ -1,7 +1,6 @@
-# Site settings
 title: Digits
-theme: jekyll-theme-cayman
+theme: jekyll-theme-slate
 
-# Plugins (gems)
 gems:
   - jekyll-mentions
+
