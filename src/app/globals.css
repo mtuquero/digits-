@@ -30,10 +30,21 @@ body {
   --bs-dark: var(--nat-navbar-bg);
   --bs-dark-rgb: var(--nat-navbar-bg-rgb);
   /* Use explicit properties to avoid compositor blur from fixed backgrounds */
-  background-image: url('/946615-pink-aesthetic-hd-wallpaper-and-background.png');
+  background-image: url('/seamless-pattern-in-brown-and-discreet-pink-colors-for-plaid-fabric-textile-clothes-tablecloth-and-other-things-image-2-vector.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Remove any gaps around navbar and main content */
+main {
+  padding: 0;
+  margin: 0;
+}
+
+nav.navbar {
+  margin-bottom: 0 !important;
 }
 
 /* Make footer text and links light for contrast on dark background */
