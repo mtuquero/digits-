@@ -119,7 +119,7 @@
     <li>Email address</li>
   </ul>
   <p>
-    Once submitted, the new contact is saved and displayed on the Home page.
+    Once submitted, the new contact is saved and displayed on the listing contact page.
   </p>
 
   
