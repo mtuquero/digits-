@@ -1,8 +1,5 @@
 # Site settings
 title: Digits
-description: A web app for managing and tracking digits efficiently
-google_analytics: # add your Google Analytics ID here if you have one
-show_downloads: true
 theme: jekyll-theme-cayman
 
 # Plugins (gems)
