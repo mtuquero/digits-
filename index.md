@@ -83,7 +83,7 @@
     <img src="doc/Sign In.jpeg" width="700" alt="Sign In Page">
   </div>
   <p>
-    Existing users can log in by entering their email and password. Once successfully signed in, users are redirected to the Home (Contacts) page.
+    Existing users can log in by entering their email and password. Once successfully signed in, users are redirected to the Home page.
   </p>
 
   <!-- Sign Up Page -->
@@ -96,7 +96,7 @@
   </p>
 
   <!-- Home Page -->
-  <h3>Home Page (Contacts)</h3>
+  <h3>Home Page </h3>
   <div style="text-align: center;">
     <img src="doc/Homepage user.jpeg" width="700" alt="Home Page">
   </div>
