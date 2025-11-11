@@ -1,8 +1,10 @@
-title: nextjs-application-template
-description: A template for quickly starting Next.js application development
-google_analytics:
+# Site settings
+title: Digits
+description: A web app for managing and tracking digits efficiently
+google_analytics: # add your Google Analytics ID here if you have one
 show_downloads: true
 theme: jekyll-theme-cayman
 
+# Plugins (gems)
 gems:
   - jekyll-mentions
