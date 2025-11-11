@@ -1,3 +1,69 @@
+<!-- ========================= -->
+<!-- Digits Project Home Page -->
+<!-- ========================= -->
+
+<h1>Digits</h1>
+
+<p>
+  Welcome to <strong>Digits</strong> — a simple, secure web application designed to help users manage and organize their personal contact information.  
+  It demonstrates user authentication, protected routes, and full CRUD (Create, Read, Update, Delete) functionality using a modern web stack.
+</p>
+
+<!-- ========================= -->
+<!-- Screenshot of Landing Page -->
+<!-- ========================= -->
+<div style="text-align: center;">
+  <img src="doc/Start page.jpeg" width="700" alt="Landing Page Screenshot">
+</div>
+
+<hr>
+
+<!-- ========================= -->
+<!-- Installation Instructions -->
+<!-- ========================= -->
+<h2>Installation Instructions</h2>
+
+<p>
+  Follow these steps to set up and run the <strong>Digits</strong> application locally:
+</p>
+
+<ol>
+  <li><strong>Clone the repository</strong><br>
+    Open your terminal and run:
+    <pre><code>git clone &lt;your-repo-url&gt;</code></pre>
+  </li>
+
+  <li><strong>Navigate to the project directory</strong><br>
+    <pre><code>cd digits</code></pre>
+  </li>
+
+  <li><strong>Install dependencies</strong><br>
+    Make sure you have <code>Node.js</code> installed, then run:
+    <pre><code>npm install</code></pre>
+  </li>
+
+  <li><strong>Set up your environment variables</strong><br>
+    Create a <code>.env</code> file in the root directory and include your database connection string or other environment variables as needed.
+  </li>
+
+  <li><strong>Run the development server</strong><br>
+    <pre><code>npm run dev</code></pre>
+  </li>
+
+  <li><strong>Open the app in your browser</strong><br>
+    Visit <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> to view the application.
+  </li>
+</ol>
+
+<p>
+  Once running, you can create an account, log in, and begin adding or editing contacts.
+</p>
+
+<hr>
+
+<!-- ========================= -->
+<!-- Walkthrough Section -->
+<!-- ========================= -->
 <section id="walkthrough">
   <h2>Walkthrough</h2>
 
@@ -102,3 +168,4 @@
     With its user-friendly interface and intuitive layout, Digits provides an excellent example of a modern web-based contact management system.
   </p>
 </section>
+
