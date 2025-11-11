@@ -2,7 +2,7 @@
   <h2>Walkthrough</h2>
 
   <h3>Landing Page</h3>
-  <img src=".png" width="800" alt="Landing Page">
+  <img src="doc/Start page.jpeg" width="800" alt="Landing Page">
   <p>
     The landing page introduces the Digits application and provides navigation options for signing in or registering a new account.
     If the user is not logged in, this is the only accessible page.
