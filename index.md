@@ -107,7 +107,7 @@
   <!-- Add Contact Page -->
   <h3>Add Contact Page</h3>
   <div style="text-align: center;">
-    <img src="doc/NotesPage.jpeg" width="700" alt="Add Contact Page">
+    <img src="doc/AddContact.jpeg" width="700" alt="Add Contact Page">
   </div>
   <p>
     The Add Contact page allows users to create a new contact by entering:
@@ -122,14 +122,24 @@
     Once submitted, the new contact is saved and displayed on the Home page.
   </p>
 
-  <!-- Notes Page -->
-  <h3>Notes Page</h3>
+  
+  <!-- List Contact -->
+   <h3>List Contact</h3>
   <div style="text-align: center;">
     <img src="doc/NotesPage.jpeg" width="700" alt="Notes Page">
   </div>
   <p>
+  Clicking on the List Contacts link brings up a page that lists all of the contacts associated with the logged in user.
+  </p>
+  
+  <!-- Notes -->
+  <h3>Notes</h3>
+  <div style="text-align: center;">
+    <img src="doc/Notes.jpeg" width="700" alt="Notes Page">
+  </div>
+  <p>
     The Notes page serves as a simple section where users can create or view personal notes. 
-    For this example, the page just displays a short message (“hi”), but it can easily be expanded to include more interactive features such as saving or editing notes in future versions.
+    For this example, the page just displays a short message (“Hello”), but it can easily be expanded to include more interactive features such as saving or editing notes in future versions.
   </p>
 
   <!-- Edit Contact Page -->
