@@ -14,14 +14,6 @@ model User {
   role     Role   @default(USER)
 }
 
-model Stuff {
-  id        Int       @id @default(autoincrement())
-  name      String
-  quantity  Int
-  condition Condition @default(good)
-  owner     String
-}
-
 model Note {
   id        Int      @id @default(autoincrement())
   contactId Int
@@ -45,11 +37,4 @@ model Contact {
 enum Role {
   USER
   ADMIN
-}
-
-enum Condition {
-  excellent
-  good
-  fair
-  poor
 }
